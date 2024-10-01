@@ -5,6 +5,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>About Us</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+		  rel="stylesheet">
 	<link rel="stylesheet" href="styles/normalize-fwd.css">
 	<link rel="stylesheet" href="styles/about.css">
 </head>
@@ -33,10 +37,10 @@
 				   cite="https://www.imdb.com/title/tt1031459/characters/nm0136797">"In the end, life and business are
 					about human connections. And computers are about trying to murder you in a lake."</q></p>
 
-			<!-- <div class="team">
+			<div class="team">
 				<img src="images/customer1.jpg" alt="A photo of a man">
 				<img src="images/cat-photo.jpg" alt="A photo of a cat at a desk">
-			</div> -->
+			</div>
 
 			<h3>Our Favorite Buzzwords</h3>
 
@@ -52,6 +56,41 @@
 
 			<!-- Code along during the lecture to start building your form -->
 
+			<form action="#" method="post">
+				<h2>Apply Now</h2>
+
+				<fieldset>
+					<legend>
+						<span class="number">1</span>
+						Your basic info
+					</legend>
+
+					<label for="name">Name:</label>
+					<input type="text" name="name" id="name" placeholder="Enter your name">
+
+					<label for="password">Password:</label>
+					<input type="password" name="password" id="password">
+
+					<label for="bio">Biography:</label>
+					<textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+
+				</fieldset>
+				<fieldset>
+					<legend>
+						<span class="number">2</span>
+						Work Details
+					</legend>
+					<h3>Preferred Work Setup</h3>
+
+					<input type="radio" id="hybrid" value="hybrid" name="work-setup">
+					<label for="hybrid">Hybrid</label>
+
+					<input type="radio" name="work-setup" id="remote" value="remote">
+					<label for="remote">Remote</label>
+				</fieldset>
+
+				<input type="submit" value="Submit">
+			</form>
 		</main>
 
 		<footer>
